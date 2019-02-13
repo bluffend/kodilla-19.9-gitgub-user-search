@@ -21,14 +21,15 @@ class App extends React.Component {
 	}
 
 	render() {
-		return (<div>
+    const _this1 = this;
+    return (<div>
 				<form onSubmit={event => this.onSubmit(event)}>
 					<label htmlFor="searchText">Search by user name</label>
 					<input
 						type="text"
-						id="searchText"
-						onChange={event => this.onChangeHandle(event)}
-						value={this.state.searchText} />
+            id="searchText"
+            onChange={ function(event){return _this1.onChangeHandle(event)} }
+            value={this.state.searchText}/>
 				</form>
 				<UsersList users={this.state.users} />
 			</div>

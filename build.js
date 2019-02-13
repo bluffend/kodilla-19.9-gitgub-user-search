@@ -48,6 +48,7 @@ var App = function (_React$Component) {
 		value: function render() {
 			var _this3 = this;
 
+			var _this1 = this;
 			return React.createElement(
 				"div",
 				null,
@@ -65,7 +66,7 @@ var App = function (_React$Component) {
 						type: "text",
 						id: "searchText",
 						onChange: function onChange(event) {
-							return _this3.onChangeHandle(event);
+							return _this1.onChangeHandle(event);
 						},
 						value: this.state.searchText })
 				),
